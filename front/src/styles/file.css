@@ -1,0 +1,79 @@
+.fileImg {
+    width: 50px;
+}
+.fileCard {
+    /* background: aqua; */
+    width: 300px;
+    display: flex;
+    justify-content: center;
+} 
+.fileContentCard {
+    display: flex;
+    width: 90%;
+    background: white;
+    padding: 10px 5px;
+    /* border-left: black 5px solid; */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.blueColor:hover, .redColor:hover, .greenColor:hover, .greyColor:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.fileCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.fileName, .fileDate {
+    margin: 0px;
+}
+.fileName {
+    margin-bottom: 5px;
+}
+.fileDate {
+    color: grey;
+}
+.redColor {
+    display: flex;
+    width: 90%;
+    background: white;
+    padding: 10px 5px;
+    border-left: red 5px solid;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all .5s ease-in-out;
+}
+.blueColor {
+    display: flex;
+    width: 90%;
+    background: white;
+    padding: 10px 5px;
+    border-left: blue 5px solid;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all .5s ease-in-out;
+}
+.greenColor {
+    display: flex;
+    width: 90%;
+    background: white;
+    padding: 10px 5px;
+    border-left: green 5px solid;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all .5s ease-in-out;
+}
+.greyColor {
+    display: flex;
+    width: 90%;
+    background: white;
+    padding: 10px 5px;
+    border-left: grey 5px solid;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all .5s ease-in-out;
+}
+.linkFile {
+    width: 15px;
+    
+}
+.linkDiv {
+    float: right;
+    margin-left: 95px;
+}

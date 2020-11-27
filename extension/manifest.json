@@ -1,0 +1,33 @@
+{
+  
+  "name": "SealPass",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "🗃️ SaelPass extension.\nIt allows to autocomplete store and manage your passwords 🔑 on websites 🌐.\nPlease visit www.ala-eddine-chahi.fr to get more details.",
+  "homepage_url": "https://www.ala-eddine-chahi.fr",
+
+  "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+
+  "content_scripts": 
+  [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["manifest.js"]
+    }
+  ],
+
+  "browser_action" : {
+  	"default_popup" : "extension.html",
+  	"default_title" : "SealPass",
+  	"default_icon": "logo.png"
+  },
+
+  "permissions": [
+    "tabs"
+  ]
+
+ }

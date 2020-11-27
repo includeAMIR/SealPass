@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Cloud </title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script>
+    //recup nom fichier important pour stockage
+    $(document).ready(function(){
+        $('input[type="file"]').change(function(e){
+            var fileName = e.target.files[0].name;
+            console.log(fileName);
+        });
+    });
+</script>
+</head>
+
+<body>
+    <h1>Cloud</h1>
+
+    <form target="_blank" action="/uploadFile" enctype="multipart/form-data" method="POST">
+        <span>Sauvegarder votre fichier :</span>
+        <input type="file" name="file_na" method = "POST" id="file_na" required/> <br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+    $.post('/jquery/submitData',   // url
+       { myData: 'file_na' }, // data to be submit
+       function(data, status, jqXHR) {// success callback
+          $('p').append('status: ' + status + ', data: ' + data);
+      });
+    });
+    </script>
+
+</body>
+
+</html>

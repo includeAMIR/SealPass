@@ -1,0 +1,3 @@
+Le projet étant encore en developpement il faudra lancer les parties front et back séparement à l'aide d'npm install puis npm start pour le front et nodemon ./erver pour le back.
+
+SealPass 2020.
